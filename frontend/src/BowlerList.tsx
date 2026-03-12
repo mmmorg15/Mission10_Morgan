@@ -1,6 +1,6 @@
 import type { Bowler } from "./types/Bowler";
 import { useEffect, useState } from "react";
-
+// This component fetches a list of bowlers from the backend API and displays them in a table format. It uses the useState hook to manage the state of the bowlers and the useEffect hook to perform the data fetching when the component mounts.
 function BowlerList() {
     const [bowlers, setBowlers] = useState<Bowler[]>([]);
 
@@ -19,7 +19,7 @@ function BowlerList() {
     
 
     
-
+// The component returns a JSX structure that includes a heading and a table. The table headers correspond to the properties of the Bowler type, and the table body is populated by mapping over the bowlers state array, creating a row for each bowler with their respective data.
     return (
         <>
         <h1>Bowler List</h1>
